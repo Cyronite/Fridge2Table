@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge2Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>  
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="leftside">
+            <img src="../assets/logo.png" alt="logo.png" id="logo">
+            <h1 id="MainText">Fridge2Table</h1>
+        </div>
+        <div id="rightSide" style="display: flex; align-items: center; justify-content: center;">
+            <button id = "popupButton"><img src="../assets/add-button.png" alt="Add" class="buttonImg"></button>
+        </div>  
+    </div>
+    <div id="hero">
+    </div>
+    <div id="heroPopup">
+        <div id="popup">
+            <form id ="form" onsubmit="return false">
+                <input type="text" name="item" id="additem" maxlength="40">
+                <button type="submit" class = "addButton"><img src="../assets/add-button.png" alt="Add" class="buttonImg"></button>
+            </form>
+            <ul id = "list">
+            </ul>
+            <button id="closePopup">Done</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="leftside">
+            <img src="../assets/logo.png" alt="logo.png" id="logoFooter">
+            <h1 id="MainTextFooter">Fridge2Table</h1>
+        </div>
+
+        <div id = "rightSide"> 
+            <a href="https://github.com/Cyronite/Fridge2Table" id = "link"> <img src="../assets/github-logo.png" alt="Link to GitHub Repo" id ="footerImage"></a>
+
+        </div>
+    </div>
+</body>
+</html>

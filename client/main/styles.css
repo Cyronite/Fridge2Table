@@ -1,0 +1,178 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    
+}
+#navbar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#leftside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo {
+    height: 50px;
+    padding-right: 15px;
+}
+#MainText{
+    font-family: "Fascinate Inline" ;                                            
+}
+.hero{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.row{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+}
+.cardImg{
+    border-bottom: 3px;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+.cardTitle, .missedIngredients{
+    font-family:"Comic Neue" ;
+}
+.missedIngredients{
+    font-size: 20px;
+}
+#additem{
+    font-family: "Comic Neue";
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+    padding-right: 45px;
+    font-size: 20px;
+}
+#form{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addButton{
+    border: 0;
+    background:none;
+}
+.buttonImg{
+    background:none;
+    height: 40px;
+}
+#Recipes{
+    text-decoration: none;
+    color: inherit;
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight:1000;
+}
+.ingredient{
+    width: 590px
+}
+
+
+#heroPopup{
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroPopup.open{
+    z-index: 999;
+    opacity:1;
+}
+
+#popup{
+    width: 700px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+#list{
+    padding-left: 100px;
+}
+.ingredient{
+    font-family: "Comic Neue";
+    font-size: 25px;
+    width: fit-content;
+}
+.ingredient:hover{
+    text-decoration: line-through;
+    cursor: pointer;
+    color: red;
+}
+#closePopup{
+    background-color: #26de81;
+    border: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    align-self: center;
+    width: fit-content;
+}
+#popupButton{
+    background:none;
+    border:0;
+    height: 40px;
+}
+#footer{
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#footerImage{
+    height: 50px;
+    filter: invert();
+}
+#MainTextFooter{
+    font-family: "Fascinate Inline" ;
+    color: white;
+}
+#logoFooter{
+    height: 50px;
+    padding-right: 15px;
+    filter: invert(1);
+}
